@@ -1,4 +1,9 @@
-fun main(args: Array<String>) {
+package two_sum
+
+/**
+ * @see https://leetcode.com/problems/two-sum/
+ * */
+fun main() {
     val solution = Solution()
     val testCases = listOf(
         (intArrayOf(2, 7, 11, 15) to 9) to intArrayOf(0, 1),
@@ -18,7 +23,7 @@ fun main(args: Array<String>) {
     }
 }
 
-class Solution {
+private class Solution {
     fun twoSum(nums: IntArray, target: Int): IntArray {
         for (i in 0 until nums.lastIndex) {
             for (j in i + 1..nums.lastIndex) {
